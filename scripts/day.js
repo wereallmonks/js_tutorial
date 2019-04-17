@@ -4,3 +4,10 @@ function dayName(date) {
                          "Thursday", "Friday", "Saturday"];
   return daysOfTheWeek[date.getDay()];
 }
+
+// Returns a greeting for the given date.
+function greeting(date) {
+  let now = new Date();
+      alert(`Hello, world! Happy ${dayName(now)}!`);
+}
+greeting();
