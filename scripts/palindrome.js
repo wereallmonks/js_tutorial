@@ -3,6 +3,12 @@ String.prototype.reverse = function() {
   return Array.from(this).reverse().join("");
 }
 
+String.prototype.blank = function() {
+  if ((/^(?!\s*$).+/g)|(/\+s/)) {
+    return "True";
+  }
+}
+
 // Defines a Phrase object.
 function Phrase(content) {
   this.content = content;
